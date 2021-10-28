@@ -14,13 +14,20 @@ import {
   CircularProgress,
   CircularProgressLabel,
   Progress,
+  Image,
+  SimpleGrid,
+  Grid,
+  GridItem,
+  WrapItem,
+  Wrap,
+  Button,
 } from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
+import { CheckIcon, DownloadIcon } from '@chakra-ui/icons';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box bg="#424344" h="100vh" w="100%">
+      <Box bg="#20202A" h="100vh" w="100%">
         <Flex minH="100vh">
           <Box bg="#424344" w="20%">
             {/* PERSONAL INFORMATION */}
@@ -228,12 +235,151 @@ function App() {
                   </Text>
                 </Flex>
                 <Divider pt={5} borderColor="gray" />
+                <Box mt={2}>
+                  <Stack>
+                    <Text fontSize="xs" fontWeight="medium" color="gray">
+                      DOWNLOAD CV
+                      <DownloadIcon w={3} color="#FFC107" ml={1} />
+                    </Text>
+                    <Spacer />
+                  </Stack>
+                </Box>
               </Container>
             </Box>
           </Box>
-          <Box bg="yellow" w="70%">
-            2
+
+          {/*DISCOVERY */}
+
+          <Box bg="#20202A" w="100%">
+            <Box bg="" h="46vh">
+              <Flex mt={32} ml={52}>
+                <Stack color="white">
+                  <Text fontSize="5xl" fontWeight="black">
+                    Discover my Amazing <br />
+                    Art Space!
+                  </Text>
+                  <Flex>
+                    <Text mr={3} color="#FFC107">
+                      code
+                    </Text>
+                    <Text mr={3}> I build automation tool</Text>
+                    <Text color="#FFC107">code</Text>
+                  </Flex>
+
+                  <Flex>
+                    <Text
+                      fontWeight="semibold"
+                      fontSize="small"
+                      pt={3}
+                      textAlign="center"
+                      m={4}
+                      bg="#FFC107"
+                      w="16vh"
+                      h="48px"
+                      color="black"
+                    >
+                      EXPLORE NOW
+                    </Text>
+                  </Flex>
+                </Stack>
+                <Stack>
+                  <Box boxSize="sm">
+                    <Image
+                      pt={6}
+                      ml={10}
+                      src="https://bit.ly/sage-adebayo"
+                      alt="Segun Adebayo"
+                    />
+                  </Box>
+                </Stack>
+              </Flex>
+            </Box>
+            <Flex bgColor="" justify="center" mt={8} pl={10}>
+              <Text fontWeight="bold" fontSize="2xl" color="#FFC107">
+                10 +
+              </Text>
+              <Text
+                ml={3}
+                fontSize="sm"
+                mt={2}
+                fontWeight="semibold"
+                color="white"
+              >
+                Years Experience
+              </Text>
+              <Spacer />
+
+              <Text fontWeight="bold" fontSize="2xl" color="#FFC107">
+                143
+              </Text>
+              <Text
+                ml={3}
+                fontSize="sm"
+                fontWeight="semibold"
+                mt={2}
+                color="white"
+              >
+                Completed Projects
+              </Text>
+              <Spacer />
+              <Spacer />
+
+              <Text fontWeight="bold" fontSize="2xl" color="#FFC107">
+                114
+              </Text>
+              <Text
+                ml={3}
+                fontSize="sm"
+                fontWeight="semibold"
+                mt={2}
+                color="white"
+              >
+                Happy Customers
+              </Text>
+              <Spacer />
+              <Spacer />
+
+              <Text fontWeight="bold" fontSize="2xl" color="#FFC107">
+                20 +
+              </Text>
+              <Text
+                ml={3}
+                fontSize="sm"
+                fontWeight="semibold"
+                mt={2}
+                color="white"
+              >
+                Honors and Awards
+              </Text>
+              <Spacer />
+            </Flex>
+            <Stack>
+              <Text color="#FFC107" fontSize="xl" ml={2} pt={10}>
+                My Services
+              </Text>
+            </Stack>
+
+            <SimpleGrid columns={2} spacingX="40px" spacingY="20px">
+              <Box bg="tomato" height="80px">
+                1
+              </Box>
+              <Box bg="tomato" height="80px">
+                2
+              </Box>
+              <Box bg="tomato" height="80px">
+                3
+              </Box>
+              <Box bg="tomato" height="80px">
+                4
+              </Box>
+              <Box bg="tomato" height="80px">
+                5
+              </Box>
+            </SimpleGrid>
           </Box>
+
+          {/* |||| */}
+
           <Box bg="green" w="10%">
             3
           </Box>
