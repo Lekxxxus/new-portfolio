@@ -354,25 +354,25 @@ function App() {
               <Spacer />
             </Flex>
             <Stack>
-              <Text color="#FFC107" fontSize="xl" ml={2} pt={10}>
+              <Text color="#FFC107" fontSize="xl" my={6} pt={10}>
                 My Services
               </Text>
             </Stack>
 
-            <SimpleGrid columns={2} spacingX="40px" spacingY="20px">
-              <Box bg="tomato" height="80px">
+            <SimpleGrid columns={3} spacingX="1rem" spacingY="3rem">
+              <Box bg="tomato" height="15rem" width="24rem">
                 1
               </Box>
-              <Box bg="tomato" height="80px">
+              <Box bg="tomato" height="15rem" width="24rem">
                 2
               </Box>
-              <Box bg="tomato" height="80px">
+              <Box bg="tomato" height="15rem" width="24rem">
                 3
               </Box>
-              <Box bg="tomato" height="80px">
+              <Box bg="tomato" height="15rem" width="24rem">
                 4
               </Box>
-              <Box bg="tomato" height="80px">
+              <Box bg="tomato" height="15rem" width="24rem">
                 5
               </Box>
             </SimpleGrid>
